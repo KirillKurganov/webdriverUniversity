@@ -1,0 +1,24 @@
+{
+  "name": "webdriveruniversity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirillKurganov/webdriverUniversity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KirillKurganov/webdriverUniversity/issues"
+  },
+  "homepage": "https://github.com/KirillKurganov/webdriverUniversity#readme",
+  "dependencies": {
+    "cypress": "^9.6.0",
+    "dotenv": "^16.0.0",
+    "prettier": "^2.6.2"
+  }
+}
