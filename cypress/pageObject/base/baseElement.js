@@ -1,5 +1,4 @@
 export class BaseElement {
-
   constructor(selector) {
     this.selector = selector;
   }
@@ -8,12 +7,20 @@ export class BaseElement {
     return cy.get(this.selector);
   }
 
-  click() {
-    cy.get(this.selector).click();
+  click(options = {}) {
+    cy.get(this.selector).click(options);
+  }
+
+  scrollToElement(options = {}) {
+    cy.get(this.selector).scrollIntoView(options);
   }
 
   verifyElementIsVisible() {
     cy.get(this.selector).should('be.visible');
+  }
+
+  verifyElementIsNotVisible() {
+    cy.get(this.selector).should('not.be.visible');
   }
 
   verifyAttributeIsCorrect(attribute, expectedValue) {

@@ -1,7 +1,7 @@
-import { BasePage } from "./basePage";
+import { BasePage } from './basePage';
 import { BaseElement } from './baseElement';
 
 export {
-    BasePage,
-    BaseElement
+  BasePage,
+  BaseElement
 };
