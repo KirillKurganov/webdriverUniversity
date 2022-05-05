@@ -6,7 +6,11 @@ export class Input extends BaseElement {
   }
 
   type(text) {
-    cy.get(this.selector).type(text);
+    cy.get(this.selector).clear().type(text);
+  }
+
+  typeAndClickEnter(text) {
+    cy.get(this.selector).clear().type(`${text}{enter}`);
   }
 
   verifyInputValueIsCorrect(expectedValue) {
