@@ -1,5 +1,5 @@
 {
-  "defaultCommandTimeout": 5000,
+  "defaultCommandTimeout": 10000,
   "pageLoadTimeout": 30000,
   "slowTestThreshold": 90000,
   "testFiles": "**/*.test.js",

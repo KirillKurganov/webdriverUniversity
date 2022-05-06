@@ -1,5 +1,4 @@
 export class BasePage {
-
   constructor(route = '') {
     this.route = route;
   }
@@ -10,5 +9,9 @@ export class BasePage {
 
   verifyUrlIsCorrect() {
     cy.url().should('equal', `${Cypress.env('BASE_URL')}/${this.route}`);
+  }
+
+  refreshPage() {
+    cy.reload();
   }
 }

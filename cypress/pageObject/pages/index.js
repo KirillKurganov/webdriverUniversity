@@ -5,6 +5,8 @@ import { ContactUsPage } from './contactUsPage';
 import { ThankYouForYourMessagePage } from './thankYouForYourMessagePage';
 import { ButtonClicksPage } from './buttonClicksPage';
 import { ToDoListPage } from './toDoListPage';
+import { DropDownsPage } from './dropDownsPage';
+import { LoaderPage } from './loaderPage';
 
 export {
   HomePage,
@@ -13,5 +15,7 @@ export {
   ThankYouForYourMessagePage,
   ButtonClicksSection,
   ButtonClicksPage,
-  ToDoListPage
+  ToDoListPage,
+  DropDownsPage,
+  LoaderPage
 };

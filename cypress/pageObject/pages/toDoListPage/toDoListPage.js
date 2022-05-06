@@ -2,9 +2,10 @@ import { BasePage } from '../../base';
 import { Label } from '../../controls';
 import { Input } from '../../controls';
 import { ToDoList } from './toDoList';
+import { ROUTES } from '../../../data';
 
 export class ToDoListPage extends BasePage {
-  constructor(route = 'To-Do-List/index.html') {
+  constructor(route = ROUTES.ToDoListPage) {
     super(route);
     this.toDoListTitleSelector = 'div h1';
     this.toDoListInputSelector = '#container input';
