@@ -19,7 +19,7 @@ describe('Button Clicks test', () => {
     });
 
     it('verify the "Button Clicks" title is displayed', () => {
-      homePage.buttonClicksSection.title.verifyElementIsVisible();
+      homePage.buttonClicksSection.title.verifyElementIsDisplayed();
     });
   });
 

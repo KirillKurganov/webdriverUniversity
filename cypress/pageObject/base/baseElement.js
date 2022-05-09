@@ -15,7 +15,7 @@ export class BaseElement {
     cy.get(this.selector).scrollIntoView(options);
   }
 
-  verifyElementIsVisible() {
+  verifyElementIsDisplayed() {
     cy.get(this.selector).should('be.visible');
   }
 

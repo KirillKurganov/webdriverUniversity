@@ -18,7 +18,7 @@ describe('Contact Us test', () => {
     });
 
     it('verify the "Contact Us" section is displayed', () => {
-      homePage.contactUsSection.verifyElementIsVisible();
+      homePage.contactUsSection.verifyElementIsDisplayed();
     });
   });
 

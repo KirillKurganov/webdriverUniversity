@@ -1,5 +1,3 @@
-import { LoaderPage } from '../pageObject/pages/loaderPage/loaderPage';
-
 export const ROUTES = {
   ContactUsPage: 'Contact-Us/contactus.html',
   HomePage: '',
@@ -7,5 +5,6 @@ export const ROUTES = {
   ButtonClicksPage: 'Click-Buttons/index.html',
   ToDoListPage: 'To-Do-List/index.html',
   DropDownsPage: 'Dropdown-Checkboxes-RadioButtons/index.html',
-  LoaderPage: 'Ajax-Loader/index.html'
+  LoaderPage: 'Ajax-Loader/index.html',
+  FileUploadPage: 'File-Upload/index.html'
 };

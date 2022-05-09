@@ -7,6 +7,7 @@ import { ButtonClicksPage } from './buttonClicksPage';
 import { ToDoListPage } from './toDoListPage';
 import { DropDownsPage } from './dropDownsPage';
 import { LoaderPage } from './loaderPage';
+import { FileUploadPage } from './fileUploadPage';
 
 export {
   HomePage,
@@ -17,5 +18,6 @@ export {
   ButtonClicksPage,
   ToDoListPage,
   DropDownsPage,
-  LoaderPage
+  LoaderPage,
+  FileUploadPage
 };

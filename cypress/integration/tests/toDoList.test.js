@@ -13,7 +13,7 @@ describe('To-Do list test', () => {
     });
 
     it('verify the "To-Do list" section title is displayed', () => {
-      homePage.toDoListSection.title.verifyElementIsVisible();
+      homePage.toDoListSection.title.verifyElementIsDisplayed();
     });
   });
 
@@ -24,7 +24,7 @@ describe('To-Do list test', () => {
     });
 
     it('verify "To-Do list" page is displayed', () => {
-      toDoListPage.toDoListTitle.verifyElementIsVisible();
+      toDoListPage.toDoListTitle.verifyElementIsDisplayed();
     });
 
     it('verify three items are displayed in To-Do list', () => {
