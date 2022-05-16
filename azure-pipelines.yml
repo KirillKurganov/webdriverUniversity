@@ -8,8 +8,6 @@ strategy:
   matrix:
     linux:
       imageName: "ubuntu-latest"
-    mac:
-      imageName: "macOS-latest"
   maxParallel: 2
 
 pool:
