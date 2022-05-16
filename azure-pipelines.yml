@@ -7,16 +7,8 @@ trigger:
 pr:
   - main
 
-strategy:
-    matrix:
-      linux:
-        imageName: "ubuntu-latest"
-      mac:
-        imageName: "macOS-latest"
-    maxParallel: 2
-
 pool:
-  vmImage: $(imageName)
+  vmImage: "ubuntu-latest"
 
 jobs:
 - job: Build
