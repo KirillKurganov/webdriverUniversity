@@ -16,7 +16,7 @@ describe('Loader test', () => {
     });
 
     it('verify "Click me" button is displayed', () => {
-      loaderPage.clickMeButton.verifyElementIsVisible();
+      loaderPage.clickMeButton.verifyElementIsDisplayed();
     });
   });
 
@@ -29,7 +29,7 @@ describe('Loader test', () => {
     });
 
     it('verify the "Well Done" popup is displayed', () => {
-      wellDonePopup.verifyElementIsVisible();
+      wellDonePopup.verifyElementIsDisplayed();
     });
   });
 });

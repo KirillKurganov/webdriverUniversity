@@ -1,8 +1,8 @@
 import { HomePage } from '../../pageObject/pages';
 import { ButtonClicksPage } from '../../pageObject/pages';
-import { CongratulationsPopup } from '../../pageObject/popups/buttonClicksPagePopups';
-import { ItIsEasyPopup } from '../../pageObject/popups/buttonClicksPagePopups';
-import { WellDonePopup } from '../../pageObject/popups/buttonClicksPagePopups';
+import { CongratulationsPopup } from '../../pageObject/popups';
+import { ItIsEasyPopup } from '../../pageObject/popups';
+import { WellDonePopup } from '../../pageObject/popups';
 
 describe('Button Clicks test', () => {
   let homePage;
@@ -41,7 +41,7 @@ describe('Button Clicks test', () => {
     });
 
     it('verify the "Congratulations" popup is displayed', () => {
-      congratulationsPopup.verifyElementIsVisible();
+      congratulationsPopup.verifyElementIsDisplayed();
     });
   });
 
@@ -62,7 +62,7 @@ describe('Button Clicks test', () => {
     });
 
     it('verify the "Congratulations" popup is displayed', () => {
-      itIsEasyPopup.verifyElementIsVisible();
+      itIsEasyPopup.verifyElementIsDisplayed();
     });
   });
 
@@ -83,7 +83,7 @@ describe('Button Clicks test', () => {
     });
 
     it('verify the "Congratulations" popup is displayed', () => {
-      wellDonePopup.verifyElementIsVisible();
+      wellDonePopup.verifyElementIsDisplayed();
     });
   });
 

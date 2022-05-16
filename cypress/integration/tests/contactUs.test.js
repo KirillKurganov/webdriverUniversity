@@ -95,7 +95,7 @@ describe('Contact Us test', () => {
     });
 
     it('verify the "Thank you" page is displayed', () => {
-      thankYouForYourMessagePage.title.verifyElementIsVisible();
+      thankYouForYourMessagePage.title.verifyElementIsDisplayed();
     });
   });
 });
