@@ -2,25 +2,47 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- main
+  - main
+
+pr:
+  - main
 
 strategy:
-  matrix:
-    linux:
-      imageName: "ubuntu-latest"
-  maxParallel: 2
+    matrix:
+      linux:
+        imageName: "ubuntu-latest"
+      mac:
+        imageName: "macOS-latest"
+    maxParallel: 2
 
-pool:
-  vmImage: $(imageName)
+  pool:
+    vmImage: $(imageName)
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '12.x'
-  displayName: 'Install Node.js'
+jobs:
+- job: Build
+  steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.22'
+      displayName: 'Install Node.js'
 
-- script: |
-    npm install
-  displayName: 'Install packages'
+    - script: npm install
+      displayName: 'Install packages'
 
-- script: npm run ui-tests
+    - script: npm run ui-tests
+      displayName: 'UI-TESTS'
+
+- job: Work item creation
+  dependsOn: Build
+  condition: failed()
+  steps:
+    - bash: |
+        az boards work-item create \
+          --title "UI-tests in build $(build.buildNumber) failed" \
+          --type Task \
+          --detect true \
+          -p 3 Project \
+          --assigned-to kurganovkirill2512
+      env:
+        AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+      displayName: 'Create work item on failure'
