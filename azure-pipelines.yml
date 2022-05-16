@@ -24,7 +24,7 @@ jobs:
     - script: npm run ui-tests
       displayName: 'UI-TESTS'
 
-- job: 'Work item creation'
+- job: WorkItemCreation
   dependsOn: Build
   condition: failed()
   steps:
