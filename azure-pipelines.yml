@@ -15,8 +15,8 @@ strategy:
         imageName: "macOS-latest"
     maxParallel: 2
 
-  pool:
-    vmImage: $(imageName)
+pool:
+  vmImage: $(imageName)
 
 jobs:
 - job: Build
