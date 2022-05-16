@@ -33,7 +33,7 @@ jobs:
           --title "UI-tests in build $(build.buildNumber) failed" \
           --type Task \
           --detect true \
-          -p 3 Project \
+          -p 3 \
           --assigned-to kurganovkirill2512
       env:
         AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)

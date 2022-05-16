@@ -1,7 +1,7 @@
 import { HomePage } from '../../pageObject/pages';
 import { ToDoListPage } from '../../pageObject/pages';
 
-describe('To-Do list test', () => {
+describe.skip('To-Do list test', () => {
   let homePage;
   let toDoListPage;
 

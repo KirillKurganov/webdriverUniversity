@@ -1,7 +1,8 @@
 {
-  "defaultCommandTimeout": 40000,
+  "defaultCommandTimeout": 30000,
   "pageLoadTimeout": 60000,
   "slowTestThreshold": 120000,
   "testFiles": "**/*.test.js",
-  "scrollBehavior": "center"
+  "scrollBehavior": "center",
+  "video": false
 }
