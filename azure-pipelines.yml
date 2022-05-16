@@ -7,13 +7,13 @@ trigger:
 strategy:
   matrix:
     linux:
-      system: "ubuntu-latest"
+      imageName: "ubuntu-latest"
     mac:
-      system: "macOS-latest"
+      imageName: "macOS-latest"
   maxParallel: 2
 
 pool:
-  vmImage: $(system)
+  vmImage: $(imageName)
 
 steps:
 - task: NodeTool@0
