@@ -1,7 +1,7 @@
 import path from 'path';
 import { FileUploadPage } from '../../pageObject/pages';
 
-describe.skip('Upload file test', () => {
+describe('Upload file test', () => {
   let fileUploadPage;
 
   describe('Open the "Upload file" page', () => {
