@@ -8,18 +8,19 @@ pr:
   - main
 
 schedules:
-- cron: '15 13 * * *'
-  displayName: 'UI-TESTS'
+- cron: '0 17 * * Sun-Fri'
+  displayName: 'UI-TESTS SCHEDULED TRIGGER'
   branches:
     include:
       - main
   always: true
 
 pool:
-  vmImage: "ubuntu-latest"
+  vmImage: 'ubuntu-latest'
 
 jobs:
-- job: Build
+- job: Tests
+  timeoutInMinutes: 15
   steps:
     - task: NodeTool@0
       inputs:
@@ -33,12 +34,12 @@ jobs:
       displayName: 'UI-TESTS'
 
 - job: WorkItemCreation
-  dependsOn: Build
+  dependsOn: Tests
   condition: failed()
   steps:
     - bash: |
         az boards work-item create \
-          --title "UI-tests in build $(build.buildNumber) failed" \
+          --title "UI-tests failed while running build $(build.buildNumber)" \
           --type Task \
           --org https://dev.azure.com/kurganovkirill \
           -p "3 Project" \
