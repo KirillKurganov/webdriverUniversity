@@ -30,7 +30,7 @@ jobs:
     - script: npm install
       displayName: 'Install packages'
 
-    - script: npm run ui-tests --browser chrome
+    - script: npm run ui-tests chrome
       displayName: 'UI-TESTS'
 
     - task: PublishTestResults@2
@@ -49,7 +49,7 @@ jobs:
     - script: npm install
       displayName: 'Install packages'
 
-    - script: npm run ui-tests --browser firefox
+    - script: npm run ui-tests firefox
       displayName: 'UI-TESTS'
 
     - task: PublishTestResults@2
