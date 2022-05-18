@@ -3,5 +3,10 @@
   "pageLoadTimeout": 30000,
   "slowTestThreshold": 90000,
   "testFiles": "**/*.test.js",
-  "scrollBehavior": "center"
+  "scrollBehavior": "center",
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "results/report.xml",
+    "toConsole": false
+  }
 }

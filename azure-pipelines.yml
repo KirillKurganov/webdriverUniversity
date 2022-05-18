@@ -33,6 +33,11 @@ jobs:
     - script: npm run ui-tests --browser chrome
       displayName: 'UI-TESTS'
 
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: 'results/report.xml'
+
 - job: TestsFirefox
   timeoutInMinutes: 15
   steps:
@@ -46,6 +51,11 @@ jobs:
 
     - script: npm run ui-tests --browser firefox
       displayName: 'UI-TESTS'
+
+    - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'JUnit'
+          testResultsFiles: 'results/report.xml'
 
 - job: WorkItemCreation
   dependsOn:
