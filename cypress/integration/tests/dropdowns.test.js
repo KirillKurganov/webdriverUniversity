@@ -1,6 +1,6 @@
 import { DropDownsPage } from '../../pageObject/pages';
 
-describe('Drop-downs test', () => {
+describe.skip('Drop-downs test', () => {
   const first = 0;
   const second = 1;
   const third = 2;
