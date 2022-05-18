@@ -19,7 +19,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 jobs:
-- job: Tests
+- job: TestsChrome
   timeoutInMinutes: 15
   steps:
     - task: NodeTool@0
@@ -30,11 +30,27 @@ jobs:
     - script: npm install
       displayName: 'Install packages'
 
-    - script: npm run ui-tests
+    - script: npm run ui-tests --browser chrome
+      displayName: 'UI-TESTS'
+
+- job: TestsFirefox
+  timeoutInMinutes: 15
+  steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.22'
+      displayName: 'Install Node.js'
+
+    - script: npm install
+      displayName: 'Install packages'
+
+    - script: npm run ui-tests --browser firefox
       displayName: 'UI-TESTS'
 
 - job: WorkItemCreation
-  dependsOn: Tests
+  dependsOn:
+  - TestsChrome
+  - TestsFirefox
   condition: failed()
   steps:
     - bash: |
