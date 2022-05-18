@@ -53,9 +53,9 @@ jobs:
       displayName: 'UI-TESTS'
 
     - task: PublishTestResults@2
-        inputs:
-          testResultsFormat: 'JUnit'
-          testResultsFiles: 'results/report.xml'
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: 'results/report.xml'
 
 - job: WorkItemCreation
   dependsOn:
