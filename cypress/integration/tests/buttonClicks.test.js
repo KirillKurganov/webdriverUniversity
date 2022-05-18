@@ -4,7 +4,7 @@ import { CongratulationsPopup } from '../../pageObject/popups';
 import { ItIsEasyPopup } from '../../pageObject/popups';
 import { WellDonePopup } from '../../pageObject/popups';
 
-describe('Button Clicks test', () => {
+describe.skip('Button Clicks test', () => {
   let homePage;
   let buttonClicksPage;
   let congratulationsPopup;
