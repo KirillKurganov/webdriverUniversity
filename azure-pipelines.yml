@@ -38,7 +38,7 @@ jobs:
         testResultsFormat: 'JUnit'
         testResultsFiles: 'reports/reportChrome.xml'
 
-- job: TestsFirefox
+- job: TestsElectron
   timeoutInMinutes: 15
   steps:
     - task: NodeTool@0
@@ -49,18 +49,18 @@ jobs:
     - script: npm install
       displayName: 'Install packages'
 
-    - script: npm run ui-tests-firefox
+    - script: npm run ui-tests-electron
       displayName: 'UI-TESTS'
 
     - task: PublishTestResults@2
       inputs:
         testResultsFormat: 'JUnit'
-        testResultsFiles: 'reports/reportFirefox.xml'
+        testResultsFiles: 'reports/reportElectron.xml'
 
 - job: WorkItemCreation
   dependsOn:
   - TestsChrome
-  - TestsFirefox
+  - TestsElectron
   condition: failed()
   steps:
     - bash: |
