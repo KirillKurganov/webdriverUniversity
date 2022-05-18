@@ -6,8 +6,8 @@
   "scripts": {
     "open": "cypress open",
     "ui-tests": "cypress run",
-    "ui-tests chrome": "cypress run -b chrome -r junit -o mochaFile=results/report.xml",
-    "ui-tests firefox": "cypress run -b firefox -r junit -o mochaFile=results/report.xml"
+    "ui-tests-chrome": "cypress run -b chrome -r junit -o mochaFile=reports/reportChrome.xml",
+    "ui-tests-firefox": "cypress run -b firefox -r junit -o mochaFile=reports/reportFirefox.xml"
   },
   "repository": {
     "type": "git",

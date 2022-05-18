@@ -1,7 +1,7 @@
 import { LoaderPage } from '../../pageObject/pages';
 import { WellDoneForWaitingPopup } from '../../pageObject/popups';
 
-describe.skip('Loader test', () => {
+describe('Loader test', () => {
   let loaderPage;
 
   describe('Open the loader page', () => {
