@@ -36,7 +36,7 @@ jobs:
     - task: PublishTestResults@2
       inputs:
         testResultsFormat: 'JUnit'
-        testResultsFiles: 'results/reportChrome.xml'
+        testResultsFiles: 'results/report.xml'
 
 - job: TestsFirefox
   timeoutInMinutes: 15
@@ -55,7 +55,7 @@ jobs:
     - task: PublishTestResults@2
       inputs:
         testResultsFormat: 'JUnit'
-        testResultsFiles: 'results/reportFirefox.xml'
+        testResultsFiles: 'results/report.xml'
 
 - job: WorkItemCreation
   dependsOn:

@@ -2,7 +2,7 @@ import { HomePage } from '../../pageObject/pages';
 import { ContactUsPage } from '../../pageObject/pages';
 import { ThankYouForYourMessagePage } from '../../pageObject/pages';
 
-describe('Contact Us test', () => {
+describe.skip('Contact Us test', () => {
   const firstName = 'firstName';
   const lastName = 'lastName';
   const email = 'email@smth.com';
