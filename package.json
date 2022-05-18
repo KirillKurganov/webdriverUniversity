@@ -7,7 +7,7 @@
     "open": "cypress open",
     "ui-tests": "cypress run --config cypress.json",
     "ui-tests chrome": "cypress run -b chrome -r junit -o mochaFile=results/reportChrome.xml",
-    "ui-tests firefox local": "cypress run -b firefox -r junit -o mochaFile=results/reportFirefox.xml"
+    "ui-tests firefox": "cypress run -b firefox -r junit -o mochaFile=results/reportFirefox.xml"
   },
   "repository": {
     "type": "git",
