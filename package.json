@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "open": "cypress open",
-    "ui-tests": "cypress run",
-    "ui-tests ci": "cypress run --parallel",
-    "ui-tests chrome": "cypress run --browser chrome",
-    "ui-tests firefox": "cypress run --browser firefox"
+    "ui-tests": "cypress run --config cypress.json",
+    "ui-tests chrome": "cypress run -b chrome -r junit -o mochaFile=results/reportChrome.xml",
+    "ui-tests firefox local": "cypress run -b firefox -r junit -o mochaFile=results/reportFirefox.xml"
   },
   "repository": {
     "type": "git",
