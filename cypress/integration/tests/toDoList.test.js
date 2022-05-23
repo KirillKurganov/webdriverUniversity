@@ -12,6 +12,10 @@ describe('To-Do list test', () => {
       homePage.toDoListSection.scrollToElement();
     });
 
+    it('verify the visual snapshot is correct', () => {
+      homePage.verifySnapshotOfThePage();
+    });
+
     it('verify the "To-Do list" section title is displayed', () => {
       homePage.toDoListSection.title.verifyElementIsDisplayed();
     });

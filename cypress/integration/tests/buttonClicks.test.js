@@ -18,6 +18,10 @@ describe('Button Clicks test', () => {
       homePage.buttonClicksSection.scrollToElement();
     });
 
+    it('verify the visual snapshot is correct', () => {
+      homePage.verifySnapshotOfThePage();
+    });
+
     it('verify the "Button Clicks" title is displayed', () => {
       homePage.buttonClicksSection.title.verifyElementIsDisplayed();
     });

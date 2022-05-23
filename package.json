@@ -6,6 +6,7 @@
   "scripts": {
     "open": "cypress open",
     "ui-tests": "cypress run",
+    "ui-tests-update-visual-snapshots": "cypress run --env updateSnapshots=true",
     "ui-tests-chrome": "cypress run -b chrome -r junit -o mochaFile=reports/reportChrome.xml",
     "ui-tests-electron": "cypress run -b electron -r junit -o mochaFile=reports/reportElectron.xml"
   },
@@ -20,8 +21,11 @@
   },
   "homepage": "https://github.com/KirillKurganov/webdriverUniversity#readme",
   "dependencies": {
-    "cypress": "^9.6.0",
-    "dotenv": "^16.0.0",
-    "prettier": "^2.6.2"
+    "cypress": "9.6.0",
+    "dotenv": "16.0.0",
+    "prettier": "2.6.2"
+  },
+  "devDependencies": {
+    "cypress-image-snapshot": "^4.0.1"
   }
 }

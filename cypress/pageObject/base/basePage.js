@@ -14,4 +14,8 @@ export class BasePage {
   refreshPage() {
     cy.reload();
   }
+
+  verifySnapshotOfThePage(options = { allowSizeMismatch: true }) {
+    cy.matchImageSnapshot(options);
+  }
 }
