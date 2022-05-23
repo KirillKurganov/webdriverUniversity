@@ -10,10 +10,6 @@ describe('Upload file test', () => {
       fileUploadPage.navigateTo();
     });
 
-    it('verify the visual snapshot is correct', () => {
-      fileUploadPage.verifySnapshotOfThePage();
-    });
-
     it('verify "Choose file" button is displayed', () => {
       fileUploadPage.chooseFileInput.verifyElementIsDisplayed();
     });

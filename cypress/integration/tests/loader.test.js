@@ -15,10 +15,6 @@ describe('Loader test', () => {
       loaderPage.spinner.verifyElementIsNotVisible();
     });
 
-    it('verify the visual snapshot is correct', () => {
-      loaderPage.verifySnapshotOfThePage();
-    });
-
     it('verify "Click me" button is displayed', () => {
       loaderPage.clickMeButton.verifyElementIsDisplayed();
     });

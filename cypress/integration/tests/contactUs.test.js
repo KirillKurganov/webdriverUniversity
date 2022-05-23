@@ -17,10 +17,6 @@ describe('Contact Us test', () => {
       homePage.navigateTo();
     });
 
-    it('verify the visual snapshot is correct', () => {
-      homePage.verifySnapshotOfThePage();
-    });
-
     it('verify the "Contact Us" section is displayed', () => {
       homePage.contactUsSection.verifyElementIsDisplayed();
     });

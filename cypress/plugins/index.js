@@ -1,5 +1,4 @@
 require('dotenv').config();
-const { addMatchImageSnapshotPlugin } = require('cypress-image-snapshot/plugin');
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
 //
@@ -18,7 +17,6 @@ const { addMatchImageSnapshotPlugin } = require('cypress-image-snapshot/plugin')
  */
 // eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
-  addMatchImageSnapshotPlugin(on, config);
   config.env = process.env;
 
   return config;

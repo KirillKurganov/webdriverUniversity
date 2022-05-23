@@ -50,10 +50,6 @@ describe('Drop-downs test', () => {
       dropDownsPage.checkBoxesSection.checkOptionByIndex(fourth);
     });
 
-    it('verify the visual snapshot is correct', () => {
-      dropDownsPage.verifySnapshotOfThePage();
-    });
-
     it('verify the first option is checked', () => {
       dropDownsPage.checkBoxesSection.verifyOptionByIndexIsChecked(first);
     });
