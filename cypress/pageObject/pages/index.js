@@ -8,6 +8,8 @@ import { ToDoListPage } from './toDoListPage';
 import { DropDownsPage } from './dropDownsPage';
 import { LoaderPage } from './loaderPage';
 import { FileUploadPage } from './fileUploadPage';
+import { AutocompletePage } from './autocompletePage';
+import { DatePickerPage } from './datePickerPage';
 
 export {
   HomePage,
@@ -19,5 +21,7 @@ export {
   ToDoListPage,
   DropDownsPage,
   LoaderPage,
-  FileUploadPage
+  FileUploadPage,
+  AutocompletePage,
+  DatePickerPage
 };

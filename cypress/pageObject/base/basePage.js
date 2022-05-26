@@ -1,3 +1,4 @@
+// Page object pattern
 export class BasePage {
   constructor(route = '') {
     this.route = route;

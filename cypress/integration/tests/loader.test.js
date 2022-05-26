@@ -12,7 +12,7 @@ describe('Loader test', () => {
     });
 
     it('verify spinner disappears', () => {
-      loaderPage.spinner.verifyElementIsNotVisible();
+      loaderPage.spinner.verifyElementIsNotDisplayed();
     });
 
     it('verify "Click me" button is displayed', () => {

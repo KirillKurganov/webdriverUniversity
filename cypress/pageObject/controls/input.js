@@ -9,6 +9,10 @@ export class Input extends BaseElement {
     cy.get(this.selector).clear().type(text);
   }
 
+  clear() {
+    cy.get(this.selector).clear();
+  }
+
   typeAndClickEnter(text) {
     cy.get(this.selector).clear().type(`${text}{enter}`);
   }

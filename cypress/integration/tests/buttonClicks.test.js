@@ -51,7 +51,7 @@ describe('Button Clicks test', () => {
     });
 
     it('verify the "Congratulations" popup is not displayed', () => {
-      congratulationsPopup.verifyElementIsNotVisible();
+      congratulationsPopup.verifyElementIsNotDisplayed();
     });
   });
 
@@ -72,7 +72,7 @@ describe('Button Clicks test', () => {
     });
 
     it('verify the "Congratulations" popup is not displayed', () => {
-      itIsEasyPopup.verifyElementIsNotVisible();
+      itIsEasyPopup.verifyElementIsNotDisplayed();
     });
   });
 
@@ -93,7 +93,7 @@ describe('Button Clicks test', () => {
     });
 
     it('verify the "Congratulations" popup is not displayed', () => {
-      wellDonePopup.verifyElementIsNotVisible();
+      wellDonePopup.verifyElementIsNotDisplayed();
     });
   });
 });

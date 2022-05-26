@@ -7,13 +7,13 @@ trigger:
 pr:
   - main
 
-schedules:
-- cron: '0 17 * * Sun-Fri'
-  displayName: 'UI-TESTS SCHEDULED TRIGGER'
-  branches:
-    include:
-      - main
-  always: true
+#schedules:
+#- cron: '0 17 * * Sun-Fri'
+#  displayName: 'UI-TESTS SCHEDULED TRIGGER'
+#  branches:
+#    include:
+#      - main
+#  always: true
 
 pool:
   vmImage: 'ubuntu-latest'

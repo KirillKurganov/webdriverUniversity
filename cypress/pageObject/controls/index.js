@@ -6,5 +6,7 @@ import { Button } from './button';
 import { List } from './list';
 import { Select } from './select';
 import { Spinner } from './spinner';
+import { Autocomplete } from './autocomplete';
+import { DatePicker } from './datePicker';
 
-export { Section, Label, Link, Input, Button, List, Select, Spinner };
+export { DatePicker, Section, Label, Link, Input, Button, List, Select, Spinner, Autocomplete };

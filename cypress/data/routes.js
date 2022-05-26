@@ -6,5 +6,7 @@ export const ROUTES = {
   ToDoListPage: 'To-Do-List/index.html',
   DropDownsPage: 'Dropdown-Checkboxes-RadioButtons/index.html',
   LoaderPage: 'Ajax-Loader/index.html',
-  FileUploadPage: 'File-Upload/index.html'
+  FileUploadPage: 'File-Upload/index.html',
+  AutocompletePage: 'Autocomplete-TextField/autocomplete-textfield.html',
+  DatePickerPage: 'Datepicker/index.html'
 };
